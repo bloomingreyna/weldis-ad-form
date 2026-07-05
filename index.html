@@ -3,9 +3,52 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="form_style.css">
+        <script src="form.js" defer></script>
     </head>
 
     <body>
-        <h1>Hello World!</h1>
+        <form id="custom-form" target="_blank">
+            <div class="text-input">
+                <h3>Name</h3>
+                <input type="text" name="entry.2005620554" required>
+            </div>
+            <div class="text-input">
+                <h3>Email Address</h3>
+                <input type="email" name="entry.1045781291" required>
+            </div>
+            <div class="text-input">
+                <h3>Phone Number</h3>
+                <input type="number" name="entry.1166974658" required>
+            </div>
+            <div class="text-input">
+                <h3>City</h3>
+                <input type="text" name="entry.1065046570" required>
+            </div>
+            <div class="checkbox-input">
+                <h3>Services (choose at least one)</h3>
+                <label>
+                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Window Cleaning">
+                    Window Cleaning
+                </label>
+                <label>
+                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Mobile Car Detailing">
+                    Car Detailing
+                </label>
+                <label>
+                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Solar Panel Cleaning">
+                    Solar Panel Cleaning
+                </label>
+                <label>
+                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Gutter Cleaning">
+                    Gutter Cleaning
+                </label>
+                <label>
+                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Lawncare/Hedge Trimming">
+                    Lawn Care / Hedge Trimming
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
