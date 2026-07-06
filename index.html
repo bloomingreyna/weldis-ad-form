@@ -8,47 +8,73 @@
     </head>
 
     <body>
-        <form id="custom-form" target="_blank">
-            <div class="text-input">
-                <h3>Name</h3>
-                <input type="text" name="entry.2005620554" required>
+        <div id="boxes-container">
+            <div id="info-box" class="floating-box">
+                <div id="info-box-title">
+                    <img src="weldigold.png" style="width: 5rem; height: 5rem;">
+                    <h1>Contact Form</h1>
+                    <img src="weldigold.png" style="width: 5rem; height: 5rem;">
+                </div>
+                <hr>
+                <p style="margin-top: -0.25rem">Hello! If cleaning services are what you're after, you're in the right place. Just fill out your details below, and Weldi's will get back to you as soon as possible for information on your <span style="color: rgb(239, 214, 52);">FREE</span> quote!<br><br>If you'd like even more details, feel free to <a href="https://www.weldiscleaning.com" target="_blank" style="color: rgb(133, 202, 234)"><u>visit our website!</u></a></p>
             </div>
-            <div class="text-input">
-                <h3>Email Address</h3>
-                <input type="email" name="entry.1045781291" required>
+            <div id="form-box" class="floating-box">
+                <form id="custom-form">
+                    <div id="name-box" class="response-box">
+                        <h3>Name<span style="color: red"> *</span></h3>
+                        <input id="name" class="textbox" type="text">
+                        <p id="request-valid-name" style="color: red; margin-bottom: -0.1rem; display: none">This field is required.</p>
+                    </div>
+                    <div id="email-box" class="response-box">
+                        <h3>Email Address<span style="color: red"> *</span></h3>
+                        <input id="email" class="textbox" type="text">
+                        <p id="request-valid-email" style="color: red; margin-bottom: -0.1rem; display: none">Please enter a valid email address.</p>
+                    </div>
+                    <div id="phone-box" class="response-box">
+                        <h3>Phone Number<span style="color: red"> *</span></h3>
+                        <input id="phone" class="textbox" type="text">
+                        <p id="request-valid-phone" style="color: red; margin-bottom: -0.1rem; display: none">Please enter a valid phone number.</p>
+                    </div>
+                    <div id="city-box" class="response-box">
+                        <h3>City<span style="color: red"> *</span></h3>
+                        <input id="city" class="textbox" type="text">
+                        <p id="request-valid-city" style="color: red; margin-bottom: -0.1rem; display: none">This field is required.</p>
+                    </div>
+                    <div id="service-box" class="response-box">
+                        <h3>Services<span style="color: red"> *</span></h3>
+                        <div class="checkbox-input">
+                            <label>
+                                <input class="service-checkbox" type="checkbox" value="Window Cleaning">
+                                Window Cleaning
+                            </label>
+                            <label>
+                                <input class="service-checkbox" type="checkbox" value="Auto Detailing">
+                                Auto Detailing
+                            </label>
+                            <label>
+                                <input class="service-checkbox" type="checkbox" value="Solar Panel Cleaning">
+                                Solar Panel Cleaning
+                            </label>
+                            <label>
+                                <input class="service-checkbox" type="checkbox" value="Gutter Cleaning">
+                                Gutter Cleaning
+                            </label>
+                            <label>
+                                <input class="service-checkbox" type="checkbox" value="Lawn Care">
+                                Lawn Care
+                            </label>
+                            <label>
+                                <input class="service-checkbox" type="checkbox" value="Hedge Trimming">
+                                Hedge Trimming
+                            </label>
+                        </div>
+                        <p id="request-valid-service" style="color: red; margin-bottom: -0.1rem; display: none">Please select at least one service.</p>
+                    </div>
+                    <div class="center-container">
+                        <button type="button" onclick="onSubmitButtonClicked()">Submit</button>
+                    </div>
+                </form>
             </div>
-            <div class="text-input">
-                <h3>Phone Number</h3>
-                <input type="number" name="entry.1166974658" required>
-            </div>
-            <div class="text-input">
-                <h3>City</h3>
-                <input type="text" name="entry.1065046570" required>
-            </div>
-            <div class="checkbox-input">
-                <h3>Services (choose at least one)</h3>
-                <label>
-                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Window Cleaning">
-                    Window Cleaning
-                </label>
-                <label>
-                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Mobile Car Detailing">
-                    Car Detailing
-                </label>
-                <label>
-                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Solar Panel Cleaning">
-                    Solar Panel Cleaning
-                </label>
-                <label>
-                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Gutter Cleaning">
-                    Gutter Cleaning
-                </label>
-                <label>
-                    <input class="service-checkbox" type="checkbox" name="entry.839337160" value="Lawncare/Hedge Trimming">
-                    Lawn Care / Hedge Trimming
-                </label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        </div>
     </body>
 </html>
